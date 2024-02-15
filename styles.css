@@ -1,18 +1,22 @@
+
+
 /* styles.css */
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     height: 100vh;
     margin: 0;
-    padding: 0 8vw;
+    padding: 0 1vw 0 8vw;
     margin: 0 0;
     background-color: var(--color-bg);
     color: var(--color-text);
     box-sizing: border-box;
+    overflow-x: hidden;
+    margin-right: 5%;
   }
   
 :root {
 /* colors */
---color-text: #fff;
+--color-text: rgba(255, 255, 255, 0.811);
 --color-primary:#576cbc;
 --color-secondary:#0b2447;
 --color-bg: #04152d;
@@ -27,11 +31,29 @@ body {
 
 }
 
+.progress {
+    position: absolute;
+    background-color: red;
+    right: 75px;
+    padding: 12px 20px;
+    clip-path:;
+    border-radius: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    font-size: large;
+}
+
+
+.hre {
+    color: #576cbc;
+}
+
 .nav-home {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     margin-top: 4%;
+    width: 100%;
 }
 
 
@@ -58,8 +80,9 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 2vw;
-    font-size: 20px;
+    font-size: 25px;
     list-style: none;
+    font-weight: 520;
 }
 
 li:hover {
@@ -69,12 +92,14 @@ li:hover {
 }
 
 .left-home {
-    font-size: 30px;
+    position: absolute;
+    left: 8%;
+    font-size: 40px;
     font-weight: 700;
 }
 
 .left-intro h1 {
-    white-space: nowrap;
+    white-space: nowra;
     font-size: 5vw;
 }
 
@@ -100,7 +125,6 @@ h1 {
     grid-template-rows: 100vh;
     padding-top: 7%;
 } */
-
 
 .intro {
     display: flex;
@@ -178,7 +202,13 @@ p {
 
     .experience {
         display: flex;
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70vh;
+        flex-direction:column;
+    }
+
+    .experience .right-exp {
+        margin-left: 150px;
     }
 
     .about h2{
@@ -188,6 +218,16 @@ p {
     .about {
         font-size: 10px;
     }
+}
+
+.telkom img {
+    height: 100px;
+}
+
+.c-s {
+    display: flex;
+    align-items:center;
+    gap: 10px;
 }
 
  .akill-show {
@@ -201,10 +241,97 @@ p {
     font-size: 20px;
 }
 
+@media (max-width: 900px) {
+    .project-showcasing {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects {
+        margin-top: 90px;
+    }
+
+    .all-p {
+        width: 330px;
+    }
+
+    .img-b {
+        opacity: 1;
+    }
+
+}
+
+
+
+.menu {
+    display: none;
+}
+
 @media (max-width: 840px) {
-    .icon {
-        display: unset;  
+    .esp {
+        margin-left: -15vw;
+    }
+
+    .menu {
+        display: unset;
+    }
+
+    .menu:hover {
+        transform: translateX(-50%);
+        cursor: pointer;
+    }
+
+    .intro img {
+        width: 200px;
+        height: fit-content;
+    }
+
+    .intro h1 {
+        font-size: 35px;
+    }
+
+    .img-b {
+        width: 200px; 
+        height: 200px;  
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .about img {
+        display: none;
+    }
+
+    .intro {
+        display: flex;
+        align-items: ;
         justify-content: center;
+    }
+
+    .left-intro p{
+        font-size: 22px;
+    }
+
+    .left-intro {
+        margin-top: -50px;
+    }
+
+    .intro {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+        justify-content: center;
+        padding: 0;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .left-esp h2 {
+        margin-left: -90px;
+    }
+
+    .experience img{
+        width: 50px;
     }
 
     .about {
@@ -212,21 +339,27 @@ p {
         flex-direction: column;
     }
 
+    .right-about {
+        margin-left: -130px;
+        margin-top: 60px;
+    }
+
     .icon:hover {
         cursor: pointer;
     }
 
-    .right-home {
+     /* .right-home-1 {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top:-20px;
-    }
-/* 
+        opacity: 1;
+    } */
+
     .nav-home {
         display: flex;
         align-items: center;
-    } */
+    } 
 
     .right-home-l {
         position: absolute;
@@ -237,7 +370,7 @@ p {
         gap: 13px;
         top: 6%;
         right: 30px;
-        z-index: 3;
+        z-index: 30;
         background: rgb(25, 55, 109);
         background: linear-gradient(
             0deg,
@@ -246,6 +379,7 @@ p {
         );
         padding: 20px 30px;
         border-radius: 10px;
+        opacity: 1;
     }
 }
 
@@ -254,6 +388,7 @@ p {
     display: grid;
     grid-template-columns: 1fr 2fr;
     background-color:rgba(0, 0, 0, 0.756);
+    align-items: center;
     padding: 70px 30px;
     border-radius: 10px;
 }
@@ -279,14 +414,16 @@ p {
     gap: 80px;
     justify-content: space-between;
     align-items: center;
-    grid-template-columns: 2fr 3fr;
+}
+
+.experience p, h1, h2, h3, h4, h5 {
     white-space: nowrap;
 }
 
 
 .exp-grid {
     display: grid;
-    grid-template-columns: 10vw 10vw 10vw;
+    grid-template-columns: 6vw 6vw 6vw;
     grid-template-rows: 15vw;
     background-color: transparent; 
     gap: 70px;
@@ -495,3 +632,8 @@ p {
 h5 a {
     border-style: none;
 }
+
+h2 {
+    font-size: 40px;
+}
+
