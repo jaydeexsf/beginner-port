@@ -106,6 +106,7 @@ li:hover {
 .left-intro p{
     font-size: 30px;
     white-space: wrap;
+    width: 70%;
 } 
 
 .left-intro h1 {
@@ -212,7 +213,7 @@ p {
     }
 
     .about h2{
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .about {
@@ -424,7 +425,7 @@ p {
 .exp-grid {
     display: grid;
     grid-template-columns: 6vw 6vw 6vw;
-    grid-template-rows: 15vw;
+    grid-template-rows: 10vw;
     background-color: transparent; 
     gap: 70px;
 }
@@ -461,8 +462,6 @@ p {
 
 }
 
-.left-exp {
-}
 
 .date {
     font-size: 15px;
@@ -508,7 +507,7 @@ p {
 }
 
 .telkom ul{
-    font-size: 1.6vw;
+    font-size: 1.4vw;
 }
 
 .ggl {
@@ -534,9 +533,9 @@ p {
 }
 
 .explain {
-    margin-top: -10px;   
-    font-size: 18px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    margin-top: -6px;   
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif; 
 }
 
 .project {
@@ -634,6 +633,5 @@ h5 a {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 1.8vw;
 }
-
