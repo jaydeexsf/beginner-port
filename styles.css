@@ -430,8 +430,8 @@ p {
 }
 
 .skill-round {
-    width: 10vw;
-    height: 10vw;
+    width: 120px;
+    height: 120px;
     background-color: black;
     border-radius: 50%;
     opacity: 0.8;
@@ -576,7 +576,7 @@ p {
 }
 
 .all-p h3 {
-    font-size: 25px;
+    font-size: 22px;
     margin-bottom: 10px;
 }
 
