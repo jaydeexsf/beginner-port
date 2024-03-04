@@ -245,7 +245,6 @@ p {
 @media (max-width: 900px) {
     .project-showcasing {
         display: flex;
-        flex-direction: column;
     }
 
     .projects {
@@ -544,24 +543,27 @@ p {
 
 .project-showcasing {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 30px;
 }
 
 .p-img img{
     margin-top: 10px;
-    width: 300px;
+    width: 25vw;
     border-radius: 10px;
+    max-width: 300px;
 }
 
 .all-p {
     background-color: #1e314d;
     border-radius: 8px;
+    width: 32vw;
+    max-width: 320px;
     display: flex;
     flex-direction: column;
     align-items:center;
-    height: 480px;
+    height: 500px;
 }
 
 .project-showcasing p {
@@ -574,15 +576,15 @@ p {
 }
 
 .all-p h3 {
-    margin-left: -120px;
     font-size: 25px;
-    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 .all-p p {
     font-size: 20px;
-    margin-top: -20px;
+    margin-top: 0px;
     margin-left: 14px;
+    width: 98%;
 }
 
 .all-skills h5{
