@@ -199,6 +199,90 @@ p {
     display: none;
 }
 
+////
+
+@media (max-width: 900px) {
+    .experience {
+      display: block;
+    }
+  
+    .left-exp, .right-exp {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .right-exp {
+      margin-top: 20px;
+    }
+  
+    .where-employed {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .telkom {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .telkom img {
+      width: 150px;
+      height: auto;
+    }
+  
+    .ggl {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+  
+    .date {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+  
+    .explain {
+      text-align: left;
+      padding-left: 15px;
+    }
+  
+    .exp-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+    }
+  
+    .akill-show {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .skill-round {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 5px;
+    }
+  
+    .skill-round img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .exp-grid h5 {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+  
+
+/////
 @media (max-width: 800px) {
 
     .experience {
@@ -206,6 +290,11 @@ p {
         grid-template-columns: 1fr;
         grid-template-rows: 70vh;
         flex-direction:column;
+    }
+
+
+    .right-intro {
+        margin-top: -200px;
     }
 
     .experience .right-exp {
@@ -218,6 +307,15 @@ p {
 
     .about {
         font-size: 10px;
+    }
+
+    .left-intro {
+        width: 100%;
+    }
+
+    .left-intro p {
+        font-size: large;
+        width: 100%;
     }
 }
 
@@ -316,7 +414,7 @@ p {
     }
 
     .intro {
-        margin-top: 70px;
+        margin-top: 330px;
         display: flex;
         flex-direction: column-reverse;
         margin: 0;
