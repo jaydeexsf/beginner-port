@@ -566,6 +566,10 @@ p {
     height: 500px;
 }
 
+.pp {
+    font-size: 27px;
+}
+
 .project-showcasing p {
     font-size: unset;
 }
@@ -578,6 +582,7 @@ p {
 .all-p h3 {
     font-size: 22px;
     margin-bottom: 10px;
+    color: rgba(0, 170, 255, 0.7);
 }
 
 .all-p p {
